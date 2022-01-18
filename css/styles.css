@@ -1,0 +1,29 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+ul[class],
+ol[class],
+li[class] {
+  list-style: none;
+}
+
+/* Container wraps entire page */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
