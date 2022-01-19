@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     scroll-behavior: smooth;
     line-height: 1.5;
+    background-color: #262929;
   }
 
   img {
@@ -20,6 +21,10 @@ ol[class],
 li[class] {
   list-style: none;
 }
+/* TESTING */
+.test-border {
+  border: solid red 1px;
+}
 
 /* Container wraps entire page */
 .container {
@@ -27,3 +32,163 @@ li[class] {
     margin: auto;
 }
 
+/* Neon text */
+.neon-heading {
+  color: #fff;
+  font-family: 'Dosis', Calibri, sans-serif;
+  text-transform: uppercase;
+  /* font-size: 5rem; */
+  font-weight: 200;
+  text-align: center;
+}
+
+.neon-heading.primary {
+  text-shadow: 0px 0px 10px #03fcf0,
+    0px 0px 20px #03fcf0,
+    0px 0px 30px #03fcf0,
+    0px 0px 40px #03fcf0,
+    0px 0px 50px #03fcf0,
+    0px 0px 60px #03fcf0;
+}
+
+.neon-heading.secondary  {
+  text-shadow: 0px 0px 10px #ff52d1,
+      0px 0px 20px #ff52d1,
+      0px 0px 30px #ff52d1,
+      0px 0px 40px #ff52d1,
+      0px 0px 50px #ff52d1,
+      0px 0px 60px #ff52d1;
+  /* animation: pulsating 5s infinite; */
+}
+
+/* Neon Flickering */
+span.flickering-1 {
+  animation: flickering-1 4s infinite;
+}
+span.flickering-2 {
+  animation: flickering-2 3s infinite;
+}
+span.flickering-3 {
+  animation: flickering-3 5s infinite;
+}
+
+span.flickering-4 {
+  animation: flickering-4 6s infinite;
+}
+          
+/* ANIMATIONS */
+@keyframes pulsating {
+  0% {
+      text-shadow: 0px 0px 0px;
+      opacity: 0;
+  }
+  50% {
+      text-shadow: 0px 0px 10px #ff52d1,
+          0px 0px 20px #ff52d1,
+          0px 0px 30px #ff52d1,
+          0px 0px 40px #ff52d1,
+          0px 0px 50px #ff52d1,
+          0px 0px 60px #ff52d1;
+      opacity: 1;
+  }
+  100% {
+      text-shadow: 0px 0px 0px;
+      opacity: 0;
+  }
+}
+
+@keyframes flickering-1 {
+  0% { opacity: 1; }
+  52% { opacity: 1; }
+  55% { opacity: 0; }
+  56% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes flickering-2 {
+  0% { opacity: 1; }
+  62% { opacity: 1; }
+  65% { opacity: 0; }
+  66% { opacity: 1; }
+  69% { opacity: 0; }
+  70% { opacity: 1; }
+  73% { opacity: 0; }
+  74% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes flickering-3 {
+  0% { opacity: 1; }
+  82% { opacity: 1; }
+  84% { opacity: 0; }
+  85% { opacity: 1; }
+  87% { opacity: 0; }
+  88% { opacity: 1; }
+  90% { opacity: 0; }
+  91% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes flickering-4 {
+  0% { opacity: 1; }
+  52% { opacity: 1; }
+  55% { opacity: 0; }
+  56% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/* End Neon text */
+
+
+/* Main Section */
+.main-section {
+  min-height: 100vh;
+
+  /* Center main part */
+  display: grid;
+  place-items: center;
+}
+
+.main-headings {
+
+}
+
+.main-div {
+
+}
+
+.main-headings h1 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+}
+
+.main-headings h2 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+
+
+/* END Main section */
+
+/* About Section */
+
+.about-section {
+  min-height: 100vh;
+}
+
+/* END About Section */
+
+/* Projects Section */
+.projects-section {
+  min-height: 100vh;
+}
+
+/* END Projects Section */
+
+/* Contact Section */
+.contact-section {
+  min-height: 100vh;
+}
+
+/* END Contact Section */
