@@ -22,7 +22,7 @@ li[class] {
   list-style: none;
 }
 /* TESTING */
-.test-border {
+.border {
   border: solid red 1px;
 }
 
@@ -76,7 +76,7 @@ span.flickering-4 {
   animation: flickering-4 6s infinite;
 }
           
-/* ANIMATIONS */
+/* Neon Animations */
 @keyframes pulsating {
   0% {
       text-shadow: 0px 0px 0px;
@@ -139,6 +139,51 @@ span.flickering-4 {
 
 /* End Neon text */
 
+/* Navbar */
+.navbar {
+  height: 100%; /* 100% Full-height */
+  width: 5%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.navbar-links {
+  /* display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly; */
+
+  height: 100vh;
+  
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  align-self: stretch;
+
+  place-items: center;
+
+}
+
+.navbar-links i {
+  color: #fff;
+
+  text-shadow: 0px 0px 10px #03fcf0,
+  0px 0px 20px #03fcf0,
+  0px 0px 30px #03fcf0,
+  0px 0px 40px #03fcf0,
+  0px 0px 50px #03fcf0,
+  0px 0px 60px #03fcf0;
+
+}
+
+
+
+/* END Navbar */
+
 
 /* Main Section */
 .main-section {
@@ -175,13 +220,30 @@ span.flickering-4 {
 
 .about-section {
   min-height: 100vh;
+
+  /* Margin to avoid neon overflow to above section */
+  margin-top: 5rem;
 }
+
+.about-headings h2 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
 
 /* END About Section */
 
 /* Projects Section */
-.projects-section {
+.project-section {
   min-height: 100vh;
+
+  /* Margin to avoid neon overflow to above section */
+  margin-top: 5rem;
+}
+
+.project-headings h2 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
 }
 
 /* END Projects Section */
@@ -189,6 +251,14 @@ span.flickering-4 {
 /* Contact Section */
 .contact-section {
   min-height: 100vh;
+
+  /* Margin to avoid neon overflow to above section */
+  margin-top: 5rem;
+}
+
+.contact-headings h2 {
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
 }
 
 /* END Contact Section */
