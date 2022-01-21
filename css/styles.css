@@ -172,7 +172,7 @@ span.flickering-4 {
 
 .navbar-links i {
   color: #708782;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 }
 
 .navbar-links i:hover {
@@ -200,9 +200,7 @@ span.flickering-4 {
 .main-section {
   min-height: 100vh;
 
-  /* Center main part */
-  display: grid;
-  place-items: center;
+
 }
 
 .main-headings {
@@ -210,6 +208,10 @@ span.flickering-4 {
 }
 
 .main-div {
+  min-height: 95vh;
+    /* Center main part */
+    display: grid;
+    place-items: center;
 
 }
 
@@ -223,6 +225,31 @@ span.flickering-4 {
   letter-spacing: 0.3rem;
 }
 
+.arrow {
+  min-height: 5vh;
+
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow i {
+
+  position: fixed;
+
+  color: #fff;
+
+  text-shadow: 0px 0px 10px #ff52d1,
+      0px 0px 20px #ff52d1,
+      0px 0px 30px #ff52d1,
+      0px 0px 40px #ff52d1,
+      0px 0px 50px #ff52d1,
+      0px 0px 60px #ff52d1;
+
+  /* transition: ease-in-out 0.5s; */
+}
 
 
 /* END Main section */
