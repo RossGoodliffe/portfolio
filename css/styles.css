@@ -16,9 +16,11 @@ body {
     display: block;
   }
 
+/* Remove styles from lists with a class */
 ul[class],
 ol[class],
-li[class] {
+li[class]
+{
   list-style: none;
 }
 /* TESTING */
@@ -172,7 +174,7 @@ span.flickering-4 {
 
 .navbar-links i {
   color: #708782;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
 
 .navbar-links i:hover {
@@ -263,10 +265,17 @@ span.flickering-4 {
   margin-top: 5rem;
 }
 
+.about-section a {
+  text-decoration: none;
+}
+
 .about-headings h2 {
   font-size: 4rem;
   letter-spacing: 0.3rem;
 }
+
+
+
 
 
 /* END About Section */
