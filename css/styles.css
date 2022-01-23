@@ -269,10 +269,20 @@ span.flickering-4 {
   text-decoration: none;
 }
 
+.about-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+
+  color: #bffff7;
+}
+
 .about-headings h2 {
   font-size: 4rem;
   letter-spacing: 0.3rem;
 }
+
+
 
 
 
