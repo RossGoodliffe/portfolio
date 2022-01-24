@@ -282,6 +282,18 @@ span.flickering-4 {
   letter-spacing: 0.3rem;
 }
 
+.about-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+
+}
+
+.about-skillset {
+  justify-self: center;
+}
+
 
 
 
